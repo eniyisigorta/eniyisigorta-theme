@@ -35,8 +35,6 @@ nav.global-nav {
         nav.global-nav .gn-content .gn-items {
           display: none; } }
       nav.global-nav .gn-content .gn-items .gn-item a {
-        display: flex;
-        align-items: center;
         color: #d6d6d6;
         font-size: 13px;
         font-weight: 600; }
