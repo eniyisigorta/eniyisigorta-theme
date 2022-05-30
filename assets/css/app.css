@@ -1,0 +1,68 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-weight: 400; }
+
+nav.global-nav {
+  background-color: #313132; }
+  nav.global-nav .gn-content {
+    max-width: 1140px;
+    height: 48px;
+    padding: 0 15px;
+    margin: 0 auto; }
+    @media (max-width: 1140px) {
+      nav.global-nav .gn-content {
+        max-width: 960px; } }
+    @media (max-width: 960px) {
+      nav.global-nav .gn-content {
+        max-width: 720px; } }
+    @media (max-width: 720px) {
+      nav.global-nav .gn-content {
+        max-width: 540px; } }
+    nav.global-nav .gn-content .gn-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 48px; }
+      @media (max-width: 960px) {
+        nav.global-nav .gn-content .gn-items {
+          display: none; } }
+      nav.global-nav .gn-content .gn-items .gn-item a {
+        display: flex;
+        align-items: center;
+        color: #d6d6d6;
+        font-size: 13px;
+        font-weight: 600; }
+        nav.global-nav .gn-content .gn-items .gn-item a:hover {
+          color: #ffffff; }
+        nav.global-nav .gn-content .gn-items .gn-item a img {
+          height: 28px; }
+        nav.global-nav .gn-content .gn-items .gn-item a i {
+          font-size: 18px; }
+    nav.global-nav .gn-content .gn-mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 48px; }
+      @media (min-width: 960px) {
+        nav.global-nav .gn-content .gn-mobile {
+          display: none; } }
+      nav.global-nav .gn-content .gn-mobile .gn-mobile-item a {
+        color: #d6d6d6;
+        font-size: 13px;
+        font-weight: 600; }
+        nav.global-nav .gn-content .gn-mobile .gn-mobile-item a:hover {
+          color: #ffffff; }
+        nav.global-nav .gn-content .gn-mobile .gn-mobile-item a img {
+          height: 32px; }
+        nav.global-nav .gn-content .gn-mobile .gn-mobile-item a i {
+          font-size: 21px; }
+
+/*# sourceMappingURL=app.css.map */
