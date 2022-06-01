@@ -10,31 +10,31 @@ $blue-light: #147ce5;
 @import '../vendor/bootstrap/bootstrap';
 
 @font-face {
-	font-family: Duepuntozero-ExtraLight;
+	font-family: Duepuntozero;
 	src: url(../fonts/Duepuntozero-ExtraLight-Trial.ttf);
 	font-weight: 300;
 }
 
 @font-face {
-	font-family: Duepuntozero-Regular;
+	font-family: Duepuntozero;
 	src: url(../fonts/Duepuntozero-Regular-Trial.ttf);
 	font-weight: 400;
 }
 
 @font-face {
-	font-family: Duepuntozero-Bold;
+	font-family: Duepuntozero;
 	src: url(../fonts/Duepuntozero-Bold-Trial.ttf);
 	font-weight: 500;
 }
 
 @font-face {
-	font-family: Duepuntozero-ExtraBold;
+	font-family: Duepuntozero;
 	src: url(../fonts/Duepuntozero-ExtraBoldTrial.ttf);
 	font-weight: 600;
 }
 
 @font-face {
-	font-family: Duepuntozero-Black;
+	font-family: Duepuntozero;
 	src: url(../fonts/Duepuntozero-Black-Trial.ttf);
 	font-weight: 700;
 }
@@ -99,15 +99,16 @@ $blue-light: #147ce5;
 	}
 
 	.local-nav {
-		background-color: rgba(255, 255, 255, .72);
+		background-color: rgba(255, 255, 255, .9);
 		border-bottom: 1px solid #ddd;
 
 		.ln-container {
 			padding: 10px;
 
 			.ln-title {
-				font-family: Duepuntozero-Regular, sans-serif;
+				font-family: Duepuntozero, sans-serif;
 				font-size: 26px;
+				font-weight: 400;
 
 				a {
 					color: $primary;
@@ -157,8 +158,8 @@ $blue-light: #147ce5;
 
 			.ln-button {
 				background-color: $blue-dark;
-				padding: 4px 10px;
 				border-radius: 980px;
+				padding: 4px 10px;
 
 				a {
 					color: $white;
@@ -179,11 +180,56 @@ $blue-light: #147ce5;
 		background-color: $light;
 
 		.hero-area {
+			position: relative;
+			height: 100vh;
+			background-repeat: no-repeat;
+			background-position: center;
 			background-size: cover;
 
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: rgba(0, 0, 0, .6);
+			}
+
 			.hero-container {
-				color: $white;
+				position: absolute;
+				top: 35%;
+				left: 50%;
+				color: white;
 				padding: 10px;
+				transform: translate(-50%, -50%);
+
+				.hero-text {
+					font-size: 54px;
+				}
+
+				.hero-button {
+					margin-top: 30px;
+
+					a {
+						background-color: $red-dark;
+						color: $white;
+						font-size: 18px;
+						font-weight: 500;
+						text-transform: uppercase;
+						border-radius: 980px;
+						padding: 12px 24px;
+						opacity: .9;
+						transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+						-webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+						cursor: pointer;
+
+						&:hover {
+							text-decoration: none;
+							opacity: 1;
+						}
+					}
+				}
 			}
 		}
 	}

@@ -7591,23 +7591,23 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 @font-face {
-  font-family: Duepuntozero-ExtraLight;
+  font-family: Duepuntozero;
   src: url(../fonts/Duepuntozero-ExtraLight-Trial.ttf);
   font-weight: 300; }
 @font-face {
-  font-family: Duepuntozero-Regular;
+  font-family: Duepuntozero;
   src: url(../fonts/Duepuntozero-Regular-Trial.ttf);
   font-weight: 400; }
 @font-face {
-  font-family: Duepuntozero-Bold;
+  font-family: Duepuntozero;
   src: url(../fonts/Duepuntozero-Bold-Trial.ttf);
   font-weight: 500; }
 @font-face {
-  font-family: Duepuntozero-ExtraBold;
+  font-family: Duepuntozero;
   src: url(../fonts/Duepuntozero-ExtraBoldTrial.ttf);
   font-weight: 600; }
 @font-face {
-  font-family: Duepuntozero-Black;
+  font-family: Duepuntozero;
   src: url(../fonts/Duepuntozero-Black-Trial.ttf);
   font-weight: 700; }
 .app {
@@ -7645,13 +7645,14 @@ a.text-dark:hover, a.text-dark:focus {
           .app .global-nav .gn-container .gn-mobile a i {
             font-size: 21px; }
   .app .local-nav {
-    background-color: rgba(255, 255, 255, 0.72);
+    background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #ddd; }
     .app .local-nav .ln-container {
       padding: 10px; }
       .app .local-nav .ln-container .ln-title {
-        font-family: Duepuntozero-Regular, sans-serif;
-        font-size: 26px; }
+        font-family: Duepuntozero, sans-serif;
+        font-size: 26px;
+        font-weight: 400; }
         .app .local-nav .ln-container .ln-title a {
           color: #313132;
           user-select: none; }
@@ -7681,8 +7682,8 @@ a.text-dark:hover, a.text-dark:focus {
           font-size: 28px; }
       .app .local-nav .ln-container .ln-button {
         background-color: #0071e3;
-        padding: 4px 10px;
-        border-radius: 980px; }
+        border-radius: 980px;
+        padding: 4px 10px; }
         .app .local-nav .ln-container .ln-button a {
           color: #ffffff; }
           .app .local-nav .ln-container .ln-button a:hover {
@@ -7692,9 +7693,44 @@ a.text-dark:hover, a.text-dark:focus {
   .app .main {
     background-color: #f5f5f7; }
     .app .main .hero-area {
+      position: relative;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-position: center;
       background-size: cover; }
+      .app .main .hero-area:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6); }
       .app .main .hero-area .hero-container {
-        color: #ffffff;
-        padding: 10px; }
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        color: white;
+        padding: 10px;
+        transform: translate(-50%, -50%); }
+        .app .main .hero-area .hero-container .hero-text {
+          font-size: 54px; }
+        .app .main .hero-area .hero-container .hero-button {
+          margin-top: 30px; }
+          .app .main .hero-area .hero-container .hero-button a {
+            background-color: #b50d26;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            border-radius: 980px;
+            padding: 12px 24px;
+            opacity: .9;
+            transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+            -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+            cursor: pointer; }
+            .app .main .hero-area .hero-container .hero-button a:hover {
+              text-decoration: none;
+              opacity: 1; }
 
 /*# sourceMappingURL=app.css.map */
