@@ -10,7 +10,7 @@ $(function () {
 		});
 	});
 
-	$('.hero-arrow').click(function () {
+	$('.hero-arrow, .hero-button').click(function () {
 		$('html, body').animate({
 			scrollTop: $('.local-nav').height() + $('.hero-area').height()
 		}, 'slow');
