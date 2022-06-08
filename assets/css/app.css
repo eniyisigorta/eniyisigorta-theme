@@ -7632,17 +7632,19 @@ a.text-dark:hover, a.text-dark:focus {
             font-size: 18px; }
       .app .global-nav .gn-container .gn-mobile {
         font-weight: 500; }
-        .app .global-nav .gn-container .gn-mobile a {
+        .app .global-nav .gn-container .gn-mobile button {
+          background: none;
           color: #d6d6d6;
+          border: none;
+          outline: none;
           opacity: .8;
           transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
           -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); }
-          .app .global-nav .gn-container .gn-mobile a:hover {
-            opacity: 1;
-            text-decoration: none; }
-          .app .global-nav .gn-container .gn-mobile a img {
+          .app .global-nav .gn-container .gn-mobile button:hover {
+            opacity: 1; }
+          .app .global-nav .gn-container .gn-mobile button img {
             height: 32px; }
-          .app .global-nav .gn-container .gn-mobile a i {
+          .app .global-nav .gn-container .gn-mobile button i {
             font-size: 21px; }
   .app .local-nav {
     background-color: #fff; }
@@ -7670,16 +7672,18 @@ a.text-dark:hover, a.text-dark:focus {
           .app .local-nav .ln-container .ln-menu a:hover {
             color: #0071e3;
             text-decoration: none; }
-      .app .local-nav .ln-container .ln-toggle {
+      .app .local-nav .ln-container .ln-toggle button {
+        background: none;
         color: #313132;
+        border: none;
+        outline: none;
         margin-right: 15px;
         opacity: .7;
         transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-        -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-        cursor: pointer; }
-        .app .local-nav .ln-container .ln-toggle:hover {
+        -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); }
+        .app .local-nav .ln-container .ln-toggle button:hover {
           opacity: 1; }
-        .app .local-nav .ln-container .ln-toggle i {
+        .app .local-nav .ln-container .ln-toggle button i {
           font-size: 28px; }
       .app .local-nav .ln-container .ln-button {
         background-color: #0071e3;
@@ -7816,7 +7820,7 @@ a.text-dark:hover, a.text-dark:focus {
         outline: none;
         padding: 10px 35px;
         transition: all .3s ease 0s; }
-        @media (max-width: 767.98px) {
+        @media (max-width: 991.98px) {
           .app .main .insurance-area .insurance-type-select .insurance-button:first-child {
             margin-right: 15px !important; } }
         .app .main .insurance-area .insurance-type-select .insurance-button:hover {
@@ -7837,10 +7841,10 @@ a.text-dark:hover, a.text-dark:focus {
       border-bottom: 1px solid #d2d2d7; }
       .app .global-footer .gf-container .gf-strip .strip-row {
         padding: 56px 0; }
-        @media (max-width: 767.98px) {
+        @media (max-width: 991.98px) {
           .app .global-footer .gf-container .gf-strip .strip-row {
             padding: 38px 0; } }
-        @media (max-width: 767.98px) {
+        @media (max-width: 991.98px) {
           .app .global-footer .gf-container .gf-strip .strip-row .strip-col:last-child {
             margin-top: 50px; } }
         .app .global-footer .gf-container .gf-strip .strip-row .strip-col a {
@@ -7848,7 +7852,7 @@ a.text-dark:hover, a.text-dark:focus {
           width: 205px;
           color: inherit;
           text-decoration: inherit; }
-          @media (max-width: 767.98px) {
+          @media (max-width: 991.98px) {
             .app .global-footer .gf-container .gf-strip .strip-row .strip-col a {
               width: 150px; } }
           .app .global-footer .gf-container .gf-strip .strip-row .strip-col a:hover .strip-link span {
@@ -7902,7 +7906,7 @@ a.text-dark:hover, a.text-dark:focus {
             font-size: 26px; }
     .app .global-footer .gf-container .gf-directory {
       padding: 5px 0; }
-      @media (max-width: 767.98px) {
+      @media (max-width: 991.98px) {
         .app .global-footer .gf-container .gf-directory .directory-row .directory-col:nth-child(3), .app .global-footer .gf-container .gf-directory .directory-row .directory-col:nth-child(4) {
           margin-top: 30px; } }
       .app .global-footer .gf-container .gf-directory .directory-row .directory-col h3 {
@@ -7925,7 +7929,7 @@ a.text-dark:hover, a.text-dark:focus {
             font-size: 13px; }
     .app .global-footer .gf-container .gf-footer {
       padding: 34px 0; }
-      @media (max-width: 767.98px) {
+      @media (max-width: 991.98px) {
         .app .global-footer .gf-container .gf-footer {
           padding-bottom: 10px; } }
       .app .global-footer .gf-container .gf-footer .footer-shop {
@@ -7951,7 +7955,7 @@ a.text-dark:hover, a.text-dark:focus {
             border: none;
             padding: 0;
             margin: 0; }
-          @media (max-width: 767.98px) {
+          @media (max-width: 991.98px) {
             .app .global-footer .gf-container .gf-footer .footer-legal .legal-links .legal-link {
               margin-bottom: 7px; } }
   .app .whatsapp-pulse {
@@ -7971,6 +7975,10 @@ a.text-dark:hover, a.text-dark:focus {
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite; }
+    @media (max-width: 991.98px) {
+      .app .whatsapp-pulse {
+        font-size: 30px;
+        padding: 25px; } }
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.8); }
