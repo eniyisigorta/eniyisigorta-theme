@@ -358,6 +358,12 @@ $link: #06c;
 					padding: 10px 35px;
 					transition: all .3s ease 0s;
 
+					@include media-breakpoint-down(sm) {
+						&:first-child {
+							margin-right: 15px !important;
+						}
+					}
+
 					&:hover {
 						background-color: #2ee59d;
 						color: #fff;
@@ -387,6 +393,10 @@ $link: #06c;
 				.strip-row {
 					padding: 56px 0;
 
+					@include media-breakpoint-down(sm) {
+						padding: 38px 0;
+					}
+
 					.strip-col {
 
 						@include media-breakpoint-down(sm) {
@@ -397,11 +407,12 @@ $link: #06c;
 
 						a {
 							display: inline-block;
+							width: 205px;
 							color: inherit;
 							text-decoration: inherit;
 
-							@include media-breakpoint-up(sm) {
-								width: 205px;
+							@include media-breakpoint-down(sm) {
+								width: 150px;
 							}
 
 							&:hover {
@@ -540,12 +551,16 @@ $link: #06c;
 			.gf-footer {
 				padding: 34px 0;
 
+				@include media-breakpoint-down(sm) {
+					padding-bottom: 10px;
+				}
+
 				.footer-shop {
 					color: $dark;
 					font-size: 13px;
 					border-bottom: 1px solid #d2d2d7;
-					padding-bottom: 8px;
-					margin-bottom: 7px;
+					padding-bottom: 10px;
+					margin-bottom: 10px;
 
 					a {
 						color: $link;
@@ -560,7 +575,7 @@ $link: #06c;
 					}
 
 					.legal-links {
-						margin-top: 10px;
+						margin-top: 15px;
 
 						.legal-link {
 							display: inline-block;
@@ -574,6 +589,10 @@ $link: #06c;
 								border: none;
 								padding: 0;
 								margin: 0;
+							}
+
+							@include media-breakpoint-down(sm) {
+								margin-bottom: 7px;
 							}
 						}
 					}

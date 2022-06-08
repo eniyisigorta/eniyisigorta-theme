@@ -7816,6 +7816,9 @@ a.text-dark:hover, a.text-dark:focus {
         outline: none;
         padding: 10px 35px;
         transition: all .3s ease 0s; }
+        @media (max-width: 767.98px) {
+          .app .main .insurance-area .insurance-type-select .insurance-button:first-child {
+            margin-right: 15px !important; } }
         .app .main .insurance-area .insurance-type-select .insurance-button:hover {
           background-color: #2ee59d;
           color: #fff;
@@ -7835,15 +7838,19 @@ a.text-dark:hover, a.text-dark:focus {
       .app .global-footer .gf-container .gf-strip .strip-row {
         padding: 56px 0; }
         @media (max-width: 767.98px) {
+          .app .global-footer .gf-container .gf-strip .strip-row {
+            padding: 38px 0; } }
+        @media (max-width: 767.98px) {
           .app .global-footer .gf-container .gf-strip .strip-row .strip-col:last-child {
             margin-top: 50px; } }
         .app .global-footer .gf-container .gf-strip .strip-row .strip-col a {
           display: inline-block;
+          width: 205px;
           color: inherit;
           text-decoration: inherit; }
-          @media (min-width: 576px) {
+          @media (max-width: 767.98px) {
             .app .global-footer .gf-container .gf-strip .strip-row .strip-col a {
-              width: 205px; } }
+              width: 150px; } }
           .app .global-footer .gf-container .gf-strip .strip-row .strip-col a:hover .strip-link span {
             text-decoration: underline; }
           .app .global-footer .gf-container .gf-strip .strip-row .strip-col a i {
@@ -7918,18 +7925,21 @@ a.text-dark:hover, a.text-dark:focus {
             font-size: 13px; }
     .app .global-footer .gf-container .gf-footer {
       padding: 34px 0; }
+      @media (max-width: 767.98px) {
+        .app .global-footer .gf-container .gf-footer {
+          padding-bottom: 10px; } }
       .app .global-footer .gf-container .gf-footer .footer-shop {
         color: #6e6e73;
         font-size: 13px;
         border-bottom: 1px solid #d2d2d7;
-        padding-bottom: 8px;
-        margin-bottom: 7px; }
+        padding-bottom: 10px;
+        margin-bottom: 10px; }
         .app .global-footer .gf-container .gf-footer .footer-shop a {
           color: #06c; }
       .app .global-footer .gf-container .gf-footer .footer-legal .legal-copyright {
         font-size: 13px; }
       .app .global-footer .gf-container .gf-footer .footer-legal .legal-links {
-        margin-top: 10px; }
+        margin-top: 15px; }
         .app .global-footer .gf-container .gf-footer .footer-legal .legal-links .legal-link {
           display: inline-block;
           color: #424245;
@@ -7941,6 +7951,9 @@ a.text-dark:hover, a.text-dark:focus {
             border: none;
             padding: 0;
             margin: 0; }
+          @media (max-width: 767.98px) {
+            .app .global-footer .gf-container .gf-footer .footer-legal .legal-links .legal-link {
+              margin-bottom: 7px; } }
   .app .whatsapp-pulse {
     position: fixed;
     bottom: 20px;
