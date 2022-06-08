@@ -7857,6 +7857,88 @@ a.text-dark:hover, a.text-dark:focus {
             .app .global-footer .gf-container .gf-strip .strip-row .strip-col a .strip-link i {
               color: #06c;
               font-size: 16px; }
+    .app .global-footer .gf-container .gf-sosumi {
+      border-bottom: 1px solid #d2d2d7;
+      padding: 17px 0; }
+      .app .global-footer .gf-container .gf-sosumi p {
+        margin: 0; }
+        .app .global-footer .gf-container .gf-sosumi p a {
+          color: #424245; }
+    .app .global-footer .gf-container .gf-breadcrumbs {
+      padding: 17px 0; }
+      .app .global-footer .gf-container .gf-breadcrumbs ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0; }
+        .app .global-footer .gf-container .gf-breadcrumbs ul li {
+          display: flex;
+          align-items: center;
+          color: #424245;
+          font-size: 13px;
+          margin-right: 7px; }
+          .app .global-footer .gf-container .gf-breadcrumbs ul li:last-child {
+            margin: 0; }
+          .app .global-footer .gf-container .gf-breadcrumbs ul li a {
+            color: #424245;
+            margin-right: 7px; }
+            .app .global-footer .gf-container .gf-breadcrumbs ul li a:last-child {
+              margin: 0; }
+            .app .global-footer .gf-container .gf-breadcrumbs ul li a img {
+              width: 24px;
+              height: 24px; }
+          .app .global-footer .gf-container .gf-breadcrumbs ul li i {
+            color: #dbdbdf;
+            font-size: 26px; }
+    .app .global-footer .gf-container .gf-directory {
+      padding: 5px 0; }
+      @media (max-width: 767.98px) {
+        .app .global-footer .gf-container .gf-directory .directory-row .directory-col:nth-child(3), .app .global-footer .gf-container .gf-directory .directory-row .directory-col:nth-child(4) {
+          margin-top: 30px; } }
+      .app .global-footer .gf-container .gf-directory .directory-row .directory-col h3 {
+        color: #424245;
+        font-size: 13px;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        pointer-events: none; }
+        .app .global-footer .gf-container .gf-directory .directory-row .directory-col h3:first-child {
+          margin-top: 0; }
+      .app .global-footer .gf-container .gf-directory .directory-row .directory-col ul {
+        list-style: none;
+        padding: 0;
+        margin: 0; }
+        .app .global-footer .gf-container .gf-directory .directory-row .directory-col ul li {
+          margin-bottom: 5px; }
+          .app .global-footer .gf-container .gf-directory .directory-row .directory-col ul li a {
+            color: #424245;
+            font-size: 13px; }
+    .app .global-footer .gf-container .gf-footer {
+      padding: 34px 0; }
+      .app .global-footer .gf-container .gf-footer .footer-shop {
+        color: #6e6e73;
+        font-size: 13px;
+        border-bottom: 1px solid #d2d2d7;
+        padding-bottom: 8px;
+        margin-bottom: 7px; }
+        .app .global-footer .gf-container .gf-footer .footer-shop a {
+          color: #06c; }
+      .app .global-footer .gf-container .gf-footer .footer-legal .legal-copyright {
+        font-size: 13px; }
+      .app .global-footer .gf-container .gf-footer .footer-legal .legal-links {
+        margin-top: 10px; }
+        .app .global-footer .gf-container .gf-footer .footer-legal .legal-links .legal-link {
+          display: inline-block;
+          color: #424245;
+          white-space: nowrap;
+          border-right: 1px solid #d2d2d7;
+          padding-right: 10px;
+          margin-right: 7px; }
+          .app .global-footer .gf-container .gf-footer .footer-legal .legal-links .legal-link:last-child {
+            border: none;
+            padding: 0;
+            margin: 0; }
   .app .whatsapp-pulse {
     position: fixed;
     bottom: 20px;
