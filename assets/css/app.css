@@ -7836,12 +7836,14 @@ a.text-dark:hover, a.text-dark:focus {
         padding: 56px 0; }
         @media (max-width: 767.98px) {
           .app .global-footer .gf-container .gf-strip .strip-row .strip-col:last-child {
-            margin-top: 70px; } }
+            margin-top: 50px; } }
         .app .global-footer .gf-container .gf-strip .strip-row .strip-col a {
           display: inline-block;
-          width: 205px;
           color: inherit;
           text-decoration: inherit; }
+          @media (min-width: 576px) {
+            .app .global-footer .gf-container .gf-strip .strip-row .strip-col a {
+              width: 205px; } }
           .app .global-footer .gf-container .gf-strip .strip-row .strip-col a:hover .strip-link span {
             text-decoration: underline; }
           .app .global-footer .gf-container .gf-strip .strip-row .strip-col a i {
