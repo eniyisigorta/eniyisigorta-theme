@@ -7613,22 +7613,27 @@ a.text-dark:hover, a.text-dark:focus {
 .app {
   font-size: 13px; }
   .app .global-nav {
+    height: 50px;
     background-color: rgba(49, 49, 50, 0.96); }
     .app .global-nav .gn-container {
+      position: relative;
       padding: 10px; }
       .app .global-nav .gn-container .gn-desktop {
         font-weight: 400; }
-        .app .global-nav .gn-container .gn-desktop a {
+        .app .global-nav .gn-container .gn-desktop a, .app .global-nav .gn-container .gn-desktop button {
+          background: none;
           color: #d6d6d6;
+          border: none;
+          outline: none;
           opacity: .8;
           transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
           -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); }
-          .app .global-nav .gn-container .gn-desktop a:hover {
-            opacity: 1;
-            text-decoration: none; }
-          .app .global-nav .gn-container .gn-desktop a img {
+          .app .global-nav .gn-container .gn-desktop a:hover, .app .global-nav .gn-container .gn-desktop button:hover {
+            text-decoration: none;
+            opacity: 1; }
+          .app .global-nav .gn-container .gn-desktop a img, .app .global-nav .gn-container .gn-desktop button img {
             height: 28px; }
-          .app .global-nav .gn-container .gn-desktop a i {
+          .app .global-nav .gn-container .gn-desktop a i, .app .global-nav .gn-container .gn-desktop button i {
             font-size: 18px; }
       .app .global-nav .gn-container .gn-mobile {
         font-weight: 500; }
@@ -7646,6 +7651,148 @@ a.text-dark:hover, a.text-dark:focus {
             height: 32px; }
           .app .global-nav .gn-container .gn-mobile button i {
             font-size: 21px; }
+      .app .global-nav .gn-container .gn-searchview {
+        display: none; }
+        .app .global-nav .gn-container .gn-searchview .sv-content {
+          position: absolute;
+          top: 0;
+          left: 16.66667%;
+          width: 66.66667%;
+          height: calc(100vh - 16px);
+          pointer-events: none;
+          z-index: 3; }
+          .app .global-nav .gn-container .gn-searchview .sv-content .sv-form {
+            height: 50px;
+            line-height: 50px; }
+            .app .global-nav .gn-container .gn-searchview .sv-content .sv-form .sv-wrapper {
+              position: relative;
+              z-index: 2; }
+              .app .global-nav .gn-container .gn-searchview .sv-content .sv-form .sv-wrapper input {
+                position: absolute;
+                width: calc(100% - 38px - 40px);
+                height: 50px;
+                line-height: 1.29412;
+                background-color: transparent;
+                color: #fff;
+                font-family: inherit;
+                font-size: 17px;
+                letter-spacing: -.021em;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                border: none;
+                outline: none;
+                padding: 0 38px 0 40px;
+                overflow: hidden; }
+              .app .global-nav .gn-container .gn-searchview .sv-content .sv-form .sv-wrapper button {
+                background: none;
+                color: #d6d6d6;
+                border: none;
+                outline: none;
+                opacity: .8;
+                cursor: default;
+                pointer-events: auto; }
+                .app .global-nav .gn-container .gn-searchview .sv-content .sv-form .sv-wrapper button i {
+                  font-size: 16px; }
+          .app .global-nav .gn-container .gn-searchview .sv-content .sv-results {
+            display: none;
+            max-height: calc(100% - 50px);
+            line-height: 2;
+            background: #fff;
+            color: #86868b;
+            letter-spacing: -.016em;
+            white-space: nowrap;
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+            pointer-events: visible;
+            overflow-x: hidden;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            user-select: none; }
+            .app .global-nav .gn-container .gn-searchview .sv-content .sv-results .default-links {
+              border-top: 1px solid #d2d2d7;
+              padding: 23px 0 18px;
+              margin: 0 40px; }
+              .app .global-nav .gn-container .gn-searchview .sv-content .sv-results .default-links:first-child {
+                border-top-color: transparent; }
+              .app .global-nav .gn-container .gn-searchview .sv-content .sv-results .default-links .results-wrapper {
+                letter-spacing: inherit; }
+                .app .global-nav .gn-container .gn-searchview .sv-content .sv-results .default-links .results-wrapper h3 {
+                  line-height: 1.33337;
+                  color: #6e6e73;
+                  font-size: 12px;
+                  font-weight: 500;
+                  text-transform: uppercase;
+                  letter-spacing: -.01em; }
+                .app .global-nav .gn-container .gn-searchview .sv-content .sv-results .default-links .results-wrapper ul {
+                  list-style: none;
+                  padding: 0;
+                  padding-top: 5px; }
+                  .app .global-nav .gn-container .gn-searchview .sv-content .sv-results .default-links .results-wrapper ul li {
+                    margin: 6px -32px; }
+                    .app .global-nav .gn-container .gn-searchview .sv-content .sv-results .default-links .results-wrapper ul li a {
+                      display: inline-block;
+                      width: 100%;
+                      color: #1d1d1f;
+                      font-size: 14px;
+                      text-decoration: none;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      padding: 0 48px;
+                      overflow: hidden; }
+                      .app .global-nav .gn-container .gn-searchview .sv-content .sv-results .default-links .results-wrapper ul li a:hover {
+                        background-color: #f5f5f7;
+                        color: #06c; }
+        .app .global-nav .gn-container .gn-searchview .sv-close {
+          position: absolute;
+          top: 0;
+          right: 16.66667%;
+          width: 37px;
+          height: 44px;
+          background: none;
+          border: none;
+          outline: none;
+          pointer-events: none;
+          cursor: pointer;
+          opacity: .8;
+          z-index: 4;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+          transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); }
+          .app .global-nav .gn-container .gn-searchview .sv-close:hover {
+            opacity: 1; }
+          .app .global-nav .gn-container .gn-searchview .sv-close .close-wrapper {
+            width: 100%;
+            height: 100%; }
+            .app .global-nav .gn-container .gn-searchview .sv-close .close-wrapper .close-left, .app .global-nav .gn-container .gn-searchview .sv-close .close-wrapper .close-right {
+              position: absolute;
+              top: 14px;
+              width: 1px;
+              height: 18px;
+              background: #d6d6d6;
+              border-radius: 0.5px; }
+            .app .global-nav .gn-container .gn-searchview .sv-close .close-wrapper .close-left {
+              right: 12px;
+              -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+              -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%; }
+            .app .global-nav .gn-container .gn-searchview .sv-close .close-wrapper .close-right {
+              left: 12px;
+              -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+              -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%; }
+  .app .gn-curtain {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.48);
+    z-index: 2; }
   .app .local-nav {
     background-color: #fff; }
     .app .local-nav .ln-container {
@@ -7732,10 +7879,13 @@ a.text-dark:hover, a.text-dark:focus {
               .app .main .hero-area .hero-container .hero-text.small {
                 font-size: 26px; } }
         .app .main .hero-area .hero-container .hero-button {
+          background: none;
           font-size: 16px;
           font-weight: 500;
           letter-spacing: 2px;
           text-transform: uppercase;
+          border: none;
+          outline: none;
           margin-top: 50px; }
           @media (max-width: 991.98px) {
             .app .main .hero-area .hero-container .hero-button {
@@ -7860,13 +8010,25 @@ a.text-dark:hover, a.text-dark:focus {
           .app .global-footer .gf-container .gf-strip .strip-row .strip-col a i {
             color: #6e6e73;
             font-size: 38px; }
+            @media (max-width: 991.98px) {
+              .app .global-footer .gf-container .gf-strip .strip-row .strip-col a i {
+                font-size: 28px; } }
           .app .global-footer .gf-container .gf-strip .strip-row .strip-col a h5 {
             margin-top: 20px; }
+            @media (max-width: 991.98px) {
+              .app .global-footer .gf-container .gf-strip .strip-row .strip-col a h5 {
+                font-size: 16px; } }
           .app .global-footer .gf-container .gf-strip .strip-row .strip-col a p {
             font-size: 16px; }
+            @media (max-width: 991.98px) {
+              .app .global-footer .gf-container .gf-strip .strip-row .strip-col a p {
+                font-size: 14px; } }
           .app .global-footer .gf-container .gf-strip .strip-row .strip-col a .strip-link {
             color: #06c;
             font-size: 16px; }
+            @media (max-width: 991.98px) {
+              .app .global-footer .gf-container .gf-strip .strip-row .strip-col a .strip-link {
+                font-size: 14px; } }
             .app .global-footer .gf-container .gf-strip .strip-row .strip-col a .strip-link i {
               color: #06c;
               font-size: 16px; }
