@@ -7614,7 +7614,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 13px; }
   .app .global-nav {
     height: 50px;
-    background-color: rgba(49, 49, 50, 0.96); }
+    background: rgba(49, 49, 50, 0.96);
+    -webkit-transition: background 0.44s cubic-bezier(0.52, 0.16, 0.24, 1) 0.1s, visibility 0s linear 0.5s;
+    transition: background 0.44s cubic-bezier(0.52, 0.16, 0.24, 1) 0.1s, visibility 0s linear 0.5s; }
+    .app .global-nav.menu-active {
+      background: #313132;
+      -webkit-transition: background 0.18s cubic-bezier(0.32, 0.08, 0.24, 1) 0.18s, visibility 0s linear 0s;
+      transition: background 0.18s cubic-bezier(0.32, 0.08, 0.24, 1) 0.18s, visibility 0s linear 0s; }
     .app .global-nav .gn-container {
       position: relative;
       padding: 10px; }
@@ -7637,6 +7643,21 @@ a.text-dark:hover, a.text-dark:focus {
             font-size: 18px; }
       .app .global-nav .gn-container .gn-mobile {
         font-weight: 500; }
+        .app .global-nav .gn-container .gn-mobile.login-btn {
+          visibility: visible;
+          -webkit-transition: opacity 0.28s 0.36s cubic-bezier(0.52, 0.16, 0.24, 1), -webkit-transform 0.44s 0.2s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+          transition: opacity 0.28s 0.36s cubic-bezier(0.52, 0.16, 0.24, 1), -webkit-transform 0.44s 0.2s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+          transition: transform 0.44s 0.2s cubic-bezier(0.04, 0.04, 0.12, 0.96), opacity 0.28s 0.36s cubic-bezier(0.52, 0.16, 0.24, 1);
+          transition: transform 0.44s 0.2s cubic-bezier(0.04, 0.04, 0.12, 0.96), opacity 0.28s 0.36s cubic-bezier(0.52, 0.16, 0.24, 1), -webkit-transform 0.44s 0.2s cubic-bezier(0.04, 0.04, 0.12, 0.96); }
+          .app .global-nav .gn-container .gn-mobile.login-btn.menu-btn {
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+            -webkit-transition: opacity 0.3s cubic-bezier(0.32, 0.08, 0.24, 1), visibility 0s linear 0.64s, -webkit-transform 0.36s cubic-bezier(0.54, 0.12, 0.88, 0.64);
+            transition: opacity 0.3s cubic-bezier(0.32, 0.08, 0.24, 1), visibility 0s linear 0.64s, -webkit-transform 0.36s cubic-bezier(0.54, 0.12, 0.88, 0.64);
+            transition: transform 0.36s cubic-bezier(0.54, 0.12, 0.88, 0.64), opacity 0.3s cubic-bezier(0.32, 0.08, 0.24, 1), visibility 0s linear 0.64s;
+            transition: transform 0.36s cubic-bezier(0.54, 0.12, 0.88, 0.64), opacity 0.3s cubic-bezier(0.32, 0.08, 0.24, 1), visibility 0s linear 0.64s, -webkit-transform 0.36s cubic-bezier(0.54, 0.12, 0.88, 0.64); }
         .app .global-nav .gn-container .gn-mobile button {
           background: none;
           color: #d6d6d6;
@@ -7651,6 +7672,81 @@ a.text-dark:hover, a.text-dark:focus {
             height: 32px; }
           .app .global-nav .gn-container .gn-mobile button i {
             font-size: 21px; }
+      .app .global-nav .gn-container .gn-menu-container {
+        display: none; }
+        .app .global-nav .gn-container .gn-menu-container .gn-menu-wrapper {
+          position: absolute;
+          top: 50px;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          max-width: 584px;
+          height: calc(100vh - 50px);
+          background: transparent;
+          visibility: hidden;
+          z-index: 4;
+          -webkit-transition: background 0.44s cubic-bezier(0.52, 0.16, 0.24, 1) 0.1s, visibility 0s linear 0.5s;
+          transition: background 0.44s cubic-bezier(0.52, 0.16, 0.24, 1) 0.1s, visibility 0s linear 0.5s; }
+          .app .global-nav .gn-container .gn-menu-container .gn-menu-wrapper.active {
+            background: #313132;
+            visibility: visible;
+            -webkit-transition: background 0.18s cubic-bezier(0.32, 0.08, 0.24, 1) 0.18s, visibility 0s linear 0s;
+            transition: background 0.18s cubic-bezier(0.32, 0.08, 0.24, 1) 0.18s, visibility 0s linear 0s; }
+          .app .global-nav .gn-container .gn-menu-container .gn-menu-wrapper .gn-search {
+            border-bottom: 1px solid #555558;
+            padding: 10px 10px 20px 10px; }
+            .app .global-nav .gn-container .gn-menu-container .gn-menu-wrapper .gn-search .search-wrapper {
+              position: relative;
+              height: 40px;
+              line-height: 40px; }
+              .app .global-nav .gn-container .gn-menu-container .gn-menu-wrapper .gn-search .search-wrapper input {
+                position: absolute;
+                width: 100%;
+                height: 40px;
+                line-height: 1.29412;
+                background-color: rgba(0, 0, 0, 0.3);
+                color: #fff;
+                font-family: inherit;
+                font-size: 17px;
+                letter-spacing: -.021em;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                border: none;
+                border-radius: 7px;
+                outline: none;
+                padding: 0 20px 3px 38px;
+                overflow: hidden; }
+              .app .global-nav .gn-container .gn-menu-container .gn-menu-wrapper .gn-search .search-wrapper button {
+                background: none;
+                color: #d6d6d6;
+                border: none;
+                outline: none;
+                opacity: .8;
+                cursor: default; }
+                .app .global-nav .gn-container .gn-menu-container .gn-menu-wrapper .gn-search .search-wrapper button i {
+                  font-size: 16px;
+                  margin-left: 4px; }
+          .app .global-nav .gn-container .gn-menu-container .gn-menu-wrapper .gn-list {
+            max-height: calc(100vh - 122px);
+            list-style: none;
+            padding: 0 50px;
+            overflow-y: auto; }
+            .app .global-nav .gn-container .gn-menu-container .gn-menu-wrapper .gn-list .gn-item-menu {
+              border-bottom: 1px solid #555558;
+              padding: 15px 0; }
+              .app .global-nav .gn-container .gn-menu-container .gn-menu-wrapper .gn-list .gn-item-menu:last-child {
+                border: none; }
+              .app .global-nav .gn-container .gn-menu-container .gn-menu-wrapper .gn-list .gn-item-menu a {
+                display: inline-block;
+                width: 100%;
+                color: #fff;
+                font-size: 17.5px;
+                opacity: .8;
+                transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+                -webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); }
+                .app .global-nav .gn-container .gn-menu-container .gn-menu-wrapper .gn-list .gn-item-menu a:hover {
+                  text-decoration: none;
+                  opacity: 1; }
       .app .global-nav .gn-container .gn-searchview {
         display: none; }
         .app .global-nav .gn-container .gn-searchview .sv-content {
@@ -7725,8 +7821,7 @@ a.text-dark:hover, a.text-dark:focus {
                   letter-spacing: -.01em; }
                 .app .global-nav .gn-container .gn-searchview .sv-content .sv-results .default-links .results-wrapper ul {
                   list-style: none;
-                  padding: 0;
-                  padding-top: 5px; }
+                  padding: 5px 0 0 0; }
                   .app .global-nav .gn-container .gn-searchview .sv-content .sv-results .default-links .results-wrapper ul li {
                     margin: 6px -32px; }
                     .app .global-nav .gn-container .gn-searchview .sv-content .sv-results .default-links .results-wrapper ul li a {
